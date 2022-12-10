@@ -7,5 +7,5 @@
 
 ![alt yazı][resim]
 
-[resim]: https://raw.githubusercontent.com/ebubekirdgn/WebApi-NLayered/main/images/nlayered2.png "Resim Başlığı"
+[resim]: https://raw.githubusercontent.com/ebubekirdgn/WebApi-NLayered/main/images/nlayered2.png "Resim Başlığı2"
 
