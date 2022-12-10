@@ -1,11 +1,5 @@
 # WebApi-NLayered Project Structure
 
-![alt yazı][resim]
+![alt text](https://github.com/ebubekirdgn/WebApi-NLayered/blob/main/images/nlayered.png?raw=true)
 
-[resim]: https://github.com/ebubekirdgn/WebApi-NLayered/blob/main/images/nlayered.png "Resim Başlığı"
-<hr>
-
-![alt yazı][resim]
-
-[resim]: https://raw.githubusercontent.com/ebubekirdgn/WebApi-NLayered/main/images/nlayered2.png "Resim Başlığı2"
-
+![alt text](https://github.com/ebubekirdgn/WebApi-NLayered/blob/main/images/nlayer-2.png?raw=true)
