@@ -15,8 +15,6 @@ namespace NLayer.Repository.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>()
-                .HasKey(x => x.Id)
             base.OnModelCreating(modelBuilder);
         }
     }
