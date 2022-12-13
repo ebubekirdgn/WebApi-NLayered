@@ -1,5 +1,6 @@
-﻿using Arch.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Entities;
+using System.Reflection;
 
 namespace NLayer.Repository.Contexts
 {
@@ -15,7 +16,9 @@ namespace NLayer.Repository.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
     }
+
 }

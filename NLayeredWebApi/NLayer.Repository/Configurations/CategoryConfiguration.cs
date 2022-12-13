@@ -1,5 +1,5 @@
-﻿using Arch.EntityFrameworkCore;
-using Arch.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Entities;
 
 namespace NLayer.Repository.Configurations
