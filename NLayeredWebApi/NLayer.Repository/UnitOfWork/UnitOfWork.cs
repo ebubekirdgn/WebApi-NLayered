@@ -3,7 +3,7 @@ using NLayer.Repository.Contexts;
 
 namespace NLayer.Repository.UnitOfWork
 {
-    internal class UnitOfWork : IUnifOfWorks
+    public class UnitOfWork : IUnifOfWorks
     {
         protected readonly BaseDbContext _context;
 

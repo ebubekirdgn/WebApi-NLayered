@@ -1,3 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using NLayer.Core.Repositories;
+using NLayer.Core.Services;
+using NLayer.Core.UnifOfWorks;
+using NLayer.Repository.Contexts;
+using NLayer.Repository.Repositories;
+using NLayer.Repository.UnitOfWork;
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +16,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IUnifOfWorks,UnitOfWork>();
+builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IService<>),typeof(GenericRepository<>));
+
+builder.Services.AddDbContext<BaseDbContext>(x =>
+{
+    x.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), options =>
+    {
+        options.MigrationsAssembly(Assembly.GetAssembly(typeof(BaseDbContext)).GetName().Name);
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

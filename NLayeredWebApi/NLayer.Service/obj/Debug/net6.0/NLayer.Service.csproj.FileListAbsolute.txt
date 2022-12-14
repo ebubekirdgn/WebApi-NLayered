@@ -1,8 +1,3 @@
-C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.csproj.AssemblyReference.cache
-C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.AssemblyInfoInputs.cache
-C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.AssemblyInfo.cs
-C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.csproj.CoreCompileInputs.cache
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Service.deps.json
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Service.dll
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Service.pdb
@@ -10,6 +5,11 @@ C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Serv
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Repository.dll
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Repository.pdb
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\bin\Debug\net6.0\NLayer.Core.pdb
+C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.csproj.AssemblyReference.cache
+C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.AssemblyInfoInputs.cache
+C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.AssemblyInfo.cs
+C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.csproj.CoreCompileInputs.cache
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.csproj.CopyComplete
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\NLayer.Service.dll
 C:\Users\codemachine\Documents\GitHub\WebApi-NLayered\NLayeredWebApi\NLayer.Service\obj\Debug\net6.0\refint\NLayer.Service.dll
