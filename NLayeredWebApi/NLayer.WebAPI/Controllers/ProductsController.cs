@@ -19,6 +19,13 @@ namespace NLayer.WebAPI.Controllers
             _service = service;
         }
 
+        //api/products/GetProductsWithCategory
+        [HttpGet("GetProductsWithCategory")]
+        public Task<IActionResult> GetProductsWithCategory()
+        {
+
+        }
+
         [HttpGet]
         public async Task<IActionResult> All()
         {
