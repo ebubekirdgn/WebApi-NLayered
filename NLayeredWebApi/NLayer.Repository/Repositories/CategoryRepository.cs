@@ -5,7 +5,7 @@ using NLayer.Repository.Contexts;
 
 namespace NLayer.Repository.Repositories
 {
-    internal class CategoryRepository : GenericRepository<Category>, ICategoryRepository
+    public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
     {
         public CategoryRepository(BaseDbContext context) : base(context)
         {
