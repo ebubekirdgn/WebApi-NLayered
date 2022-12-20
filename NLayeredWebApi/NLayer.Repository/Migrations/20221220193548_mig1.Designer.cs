@@ -12,7 +12,7 @@ using NLayer.Repository.Contexts;
 namespace NLayer.Repository.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
-    [Migration("20221214142559_mig1")]
+    [Migration("20221220193548_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
@@ -108,7 +108,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2022, 12, 14, 17, 25, 59, 464, DateTimeKind.Local).AddTicks(6015),
+                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3212),
                             Name = "Kalem",
                             Price = 100m,
                             Stock = 20
@@ -117,7 +117,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2022, 12, 14, 17, 25, 59, 464, DateTimeKind.Local).AddTicks(6028),
+                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3224),
                             Name = "Audi A8",
                             Price = 100000m,
                             Stock = 20
@@ -126,7 +126,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 3,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2022, 12, 14, 17, 25, 59, 464, DateTimeKind.Local).AddTicks(6030),
+                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3226),
                             Name = "Monster Laptop",
                             Price = 20000m,
                             Stock = 20
