@@ -4008,9 +4008,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.WebAPI.csproj",
-      "projectName": "NLayer.WebAPI",
-      "projectPath": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.API.csproj",
+      "projectName": "NLayer.API",
+      "projectPath": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.API.csproj",
       "packagesPath": "C:\\Users\\codemachine\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\obj\\",
       "projectStyle": "PackageReference",

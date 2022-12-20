@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NLayer.Core.Dtos;
 
-namespace NLayer.WebAPI.Controllers
+namespace NLayer.API.Controllers
 {
     public class CustomBaseController : ControllerBase
     {

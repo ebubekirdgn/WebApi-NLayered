@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J8KAfQdfZ3p/SJ5sXAFguDuBx8y3VHCKpr77USTuXsmrMigN8VyLvH/tXGX65x8C2uDbyrum27yRiGcTXTfzmw==",
+  "dgSpecHash": "esFp0XaDJO7r69CfTuYX36FtaZ8f0v8xaOtVCau0grZBm0jLJ2kUSu7lyok5lG9id7CuOPTo6dQAF/NrHd8fwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\codemachine\\Documents\\GitHub\\WebApi-NLayered\\NLayeredWebApi\\NLayer.WebAPI\\NLayer.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\codemachine\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\codemachine\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
