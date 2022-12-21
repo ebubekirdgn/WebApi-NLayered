@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NLayer.Core\NLayer.Core.csproj" />
     <ProjectReference Include="..\NLayer.Service\NLayer.Service.csproj" />
   </ItemGroup>
 
