@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NLayer.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class mig1 : Migration
+    public partial class init1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -89,9 +89,9 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3212), "Kalem", 100m, 20, null },
-                    { 2, 2, new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3224), "Audi A8", 100000m, 20, null },
-                    { 3, 3, new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3226), "Monster Laptop", 20000m, 20, null }
+                    { 1, 1, new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5304), "Kalem", 100m, 20, null },
+                    { 2, 2, new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5314), "Audi A8", 100000m, 20, null },
+                    { 3, 3, new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5316), "Monster Laptop", 20000m, 20, null }
                 });
 
             migrationBuilder.InsertData(

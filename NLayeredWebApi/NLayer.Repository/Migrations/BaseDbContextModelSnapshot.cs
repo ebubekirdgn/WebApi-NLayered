@@ -105,7 +105,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3212),
+                            CreatedDate = new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5304),
                             Name = "Kalem",
                             Price = 100m,
                             Stock = 20
@@ -114,7 +114,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3224),
+                            CreatedDate = new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5314),
                             Name = "Audi A8",
                             Price = 100000m,
                             Stock = 20
@@ -123,7 +123,7 @@ namespace NLayer.Repository.Migrations
                         {
                             Id = 3,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2022, 12, 20, 22, 35, 48, 27, DateTimeKind.Local).AddTicks(3226),
+                            CreatedDate = new DateTime(2022, 12, 22, 22, 32, 49, 386, DateTimeKind.Local).AddTicks(5316),
                             Name = "Monster Laptop",
                             Price = 20000m,
                             Stock = 20
@@ -170,13 +170,13 @@ namespace NLayer.Repository.Migrations
 
             modelBuilder.Entity("NLayer.Core.Entities.Product", b =>
                 {
-                    b.HasOne("NLayer.Core.Entities.Category", "Categories")
+                    b.HasOne("NLayer.Core.Entities.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Categories");
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("NLayer.Core.Entities.ProductFeature", b =>
