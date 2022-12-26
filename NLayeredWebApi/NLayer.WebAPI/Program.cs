@@ -1,3 +1,4 @@
+using Autofac.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,7 @@ using NLayer.Core.Services;
 using NLayer.Core.UnifOfWorks;
 using NLayer.Repository.Contexts;
 using NLayer.Repository.Repositories;
-using NLayer.Repository.UnitOfWork;
+using NLayer.Repository.UnitOfWorks;
 using NLayer.Service.Mapping;
 using NLayer.Service.Services;
 using NLayer.Service.Validations;
@@ -19,9 +20,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers(options => options.Filters.Add(new ValidateFilterAttribute())).AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<ProductDtoValidator>());
 
-builder.Services.Configure<ApiBehaviorOptions> ( options =>
+builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
-    options.SuppressModelStateInvalidFilter= true;  
+    options.SuppressModelStateInvalidFilter = true;
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -47,6 +48,9 @@ builder.Services.AddDbContext<BaseDbContext>(x =>
         options.MigrationsAssembly(Assembly.GetAssembly(typeof(BaseDbContext)).GetName().Name);
     });
 });
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

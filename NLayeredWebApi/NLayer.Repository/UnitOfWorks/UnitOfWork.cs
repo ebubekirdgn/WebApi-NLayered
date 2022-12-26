@@ -1,7 +1,7 @@
 ﻿using NLayer.Core.UnifOfWorks;
 using NLayer.Repository.Contexts;
 
-namespace NLayer.Repository.UnitOfWork
+namespace NLayer.Repository.UnitOfWorks
 {
     public class UnitOfWork : IUnifOfWorks
     {
