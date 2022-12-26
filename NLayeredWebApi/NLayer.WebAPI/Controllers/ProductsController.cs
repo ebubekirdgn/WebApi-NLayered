@@ -7,26 +7,25 @@ using NLayer.Core.Services;
 
 namespace NLayer.API.Controllers
 {
-    [ValidateFilterAttribute]
     public class ProductsController : CustomBaseController
     {
         private readonly IMapper _mapper;
         private readonly IProductService _service;
 
-        public ProductsController(IMapper mapper, IService<Product> service, IProductService productService)
+        public ProductsController(IMapper mapper, IProductService productService)
         {
             _mapper = mapper;
             _service = productService;
         }
 
-        //api/products/GetProductsWithCategory
-        //[HttpGet("GetProductsWithCategory")]
+        /// GET api/products/GetProductsWithCategory
         [HttpGet("[action]")]
         public async Task<IActionResult> GetProductsWithCategory()
         {
             return CreateActionResult(await _service.GetProductsWithCategory());
         }
 
+        /// GET api/products
         [HttpGet]
         public async Task<IActionResult> All()
         {
@@ -36,12 +35,13 @@ namespace NLayer.API.Controllers
         }
 
         [ServiceFilter(typeof(NotFoundFilter<Product>))]
+        // GET /api/products/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var product = await _service.GetByIdAsync(id);
-            var productDto = _mapper.Map<ProductDto>(product);
-            return CreateActionResult(CustomResponseDto<ProductDto>.Success(200, productDto));
+            var productsDto = _mapper.Map<ProductDto>(product);
+            return CreateActionResult(CustomResponseDto<ProductDto>.Success(200, productsDto));
         }
 
         [HttpPost]
@@ -56,16 +56,18 @@ namespace NLayer.API.Controllers
         public async Task<IActionResult> Update(ProductUpdateDto productDto)
         {
             await _service.UpdateAsync(_mapper.Map<Product>(productDto));
+
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
-        //DELETE  api/products/5
-
+        // DELETE api/products/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
             var product = await _service.GetByIdAsync(id);
+
             await _service.RemoveAsync(product);
+
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
     }

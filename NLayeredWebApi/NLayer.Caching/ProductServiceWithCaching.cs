@@ -50,6 +50,7 @@ namespace NLayer.Caching
         public Task<IEnumerable<Product>> GetAllAsync()
         {
             var products = _memoryCache.Get<IEnumerable<Product>>(CacheProductKey);
+
             return Task.FromResult(products);
         }
 
