@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using NLayer.Core.Dtos;
 using NLayer.Core.Entities;
 using NLayer.Core.Services;
+using NLayer.Web.Filters;
 
 namespace NLayer.Web.Controllers
 {
+
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
@@ -48,6 +50,9 @@ namespace NLayer.Web.Controllers
 
             return View();
         }
+
+
+        [ServiceFilter(typeof(NotFoundFilter<Product>))]
 
         public async Task<IActionResult> Update(int id)
         {
