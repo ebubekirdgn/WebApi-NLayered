@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using NLayer.API.Extensions;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnifOfWorks;
@@ -27,10 +28,10 @@ namespace NLayer.API.Modules
             var repoAssembly = Assembly.GetAssembly(typeof(BaseDbContext));
             var serviceAssembly = Assembly.GetAssembly(typeof(MapProfile));
 
-            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
-           
+            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.IsAssignableToGenericType(typeof(GenericRepository<>)) ).AsImplementedInterfaces().InstancePerLifetimeScope();
 
-            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
+
+            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.IsAssignableToGenericType(typeof(Service<>))).AsImplementedInterfaces().InstancePerLifetimeScope();
 
             // builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
 
